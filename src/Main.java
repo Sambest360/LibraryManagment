@@ -10,11 +10,12 @@ public class Main {
         String author = sc.nextLine();
         System.out.println("Enter collection type: ");
         String collType = sc.nextLine();
-        System.out.println("Enter inventory management status");
+        System.out.println("Enter inventory management status: ");
         String invManagement = sc.nextLine();
 
-        Collections book = new Collections(bookName, author, collType, invManagement);
+        Circulation_Desk newDesk = new Circulation_Desk(bookName, author, collType, invManagement, true);
 
-        System.out.println(book);
+        System.out.println(newDesk);
+
     }
 }
