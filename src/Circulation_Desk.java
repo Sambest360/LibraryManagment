@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Circulation_Desk extends Collections{
+public class Circulation_Desk extends Collections {
 
     private boolean available;
 
@@ -17,14 +17,16 @@ public class Circulation_Desk extends Collections{
         this.available = available;
     }
 
-    public void loan_Management(boolean available) {
-        do {
-            if (Objects.equals(available, false)) {
-                System.out.println("This book is Currently Unavailable.");
-            } else {
-                System.out.println("Available.");
-                break;
-            }
-        } while(true);
+    public String loan_Management() {
+        if (!available) {
+            return "This book is Currently Unavailable.";
+        } else {
+            return "Available.";
+        }
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() + "\nAvailability: " + loan_Management();
     }
 }

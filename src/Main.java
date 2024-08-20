@@ -13,8 +13,8 @@ public class Main {
         System.out.println("Enter inventory management status");
         String invManagement = sc.nextLine();
 
-        Collections book1 = new Collections(bookName, author, collType, invManagement);
+        Collections book = new Collections(bookName, author, collType, invManagement);
 
-        System.out.println(book1);
+        System.out.println(book);
     }
 }
