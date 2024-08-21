@@ -11,8 +11,32 @@ public class User {
         this.email = email;
     }
 
-    public String getFullName(String fullName) {
+    public String getFullName() {
         return fullName;
     }
-    public String
+    public String getBookName() {
+        return bookName;
+    }
+    public String getPhoneNum() {
+        return phoneNum;
+    }
+    public String getEmail() {
+        return email;
+    }
+
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
+    }
+
+    public void setPhoneNum(String phoneNum) {
+        this.phoneNum = phoneNum;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
 }

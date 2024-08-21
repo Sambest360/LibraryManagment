@@ -1,12 +1,14 @@
+import java.util.Collections;
 import java.util.Objects;
 
-public class Circulation_Desk extends Collections {
+public class Circulation_Desk {
 
     private boolean available;
 
-    public Circulation_Desk(String bookNameColl, String author, String collectionType, String inventoryManagement, boolean available) {
-        super(bookNameColl, author, collectionType, inventoryManagement);
+    public Circulation_Desk(boolean available) {
+        super();
         this.available = available;
+        //, String author, String collectionType, String inventoryManagement, String fullName, String bookName, String phoneNum, String email
     }
 
     public boolean isAvailable() {
@@ -15,6 +17,10 @@ public class Circulation_Desk extends Collections {
 
     public void setAvailable(boolean available) {
         this.available = available;
+    }
+
+    private void books() {
+
     }
 
     public String loan_Management() {
