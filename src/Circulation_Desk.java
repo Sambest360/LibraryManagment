@@ -4,8 +4,8 @@ public class Circulation_Desk extends Collections {
 
     private boolean available;
 
-    public Circulation_Desk(String bookName, String author, String collectionType, String inventoryManagement, boolean available) {
-        super(bookName, author, collectionType, inventoryManagement);
+    public Circulation_Desk(String bookNameColl, String author, String collectionType, String inventoryManagement, boolean available) {
+        super(bookNameColl, author, collectionType, inventoryManagement);
         this.available = available;
     }
 

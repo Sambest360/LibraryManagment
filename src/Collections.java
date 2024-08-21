@@ -1,18 +1,23 @@
-public class Collections {
-    private String bookName;
+public class Collections extends User {
+    private String bookNameColl;
     private String author;
     private String collectionType; //Types (Books, Periodicals, Multimedia, Special Collections, E-Resources)
     private String inventoryManagement; //Track the status of items (available, checked out, lost, damaged)
 
-    public Collections(String bookName, String author, String collectionType, String inventoryManagement) {
-        this.bookName = bookName;
+    public Collections(String bookNameColl, String author, String collectionType, String inventoryManagement, String fullName, String bookName, String phoneNum, String email) {
+        super(fullName, bookName, phoneNum, email);
+        this.bookNameColl = bookNameColl;
         this.author = author;
         this.collectionType = collectionType;
         this.inventoryManagement = inventoryManagement;
     }
 
-    public String getBookName (){
-        return bookName;
+    public Collections(String bookNameColl, String author, String collectionType, String inventoryManagement, String fullName, String bookName, String phoneNum, String email) {
+        super( fullName, bookName, phoneNum, email);
+    }
+
+    public String getBookNameColl (){
+        return bookNameColl;
     }
     public String getAuthor() {
         return author;
@@ -24,8 +29,8 @@ public class Collections {
         return inventoryManagement;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
+    public void setBookName(String bookNameColl) {
+        this.bookNameColl = bookNameColl;
     }
     public void setAuthor(String author) {
         this.author = author;
@@ -39,7 +44,7 @@ public class Collections {
 
     @Override
     public String toString() {
-        return "Name: " + getBookName() +
+        return "Name: " + getBookNameColl() +
                 "\nAuthor: " + getAuthor() +
                 "\nCollection Type: " + getCollectionType() +
                 "\nInventory Management: " + getInventoryManagement();
