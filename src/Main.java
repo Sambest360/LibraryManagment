@@ -4,18 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Welcome!!!");
+        System.out.println("Browse our library");
+
+        System.out.println("Enter your Full Name: ");
+        String fullName = sc.nextLine();
+
+        System.out.println("Enter your phone number: ");
+        String phoneNum = sc.nextLine();
+
+        System.out.println("Enter your Email address: ");
+        String email = sc.nextLine();
+
         while (true) {
-            System.out.println("Welcome!!!");
-            System.out.println("Browse our library");
-
-            System.out.println("Enter your Full Name: ");
-            String fullName = sc.nextLine();
-
-            System.out.println("Enter your phone number: ");
-            String phoneNum = sc.nextLine();
-
-            System.out.println("Enter your Email address: ");
-            String email = sc.nextLine();
 
             System.out.println("Enter your book name: ");
             String bookName = sc.nextLine();
